@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Checkout Confirm\n"
-"POT-Creation-Date: 2022-10-31 14:31+0700\n"
-"PO-Revision-Date: 2022-10-31 14:32+0700\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2023-02-13 22:19+0900\n"
+"PO-Revision-Date: 2023-02-13 22:26+0900\n"
+"Last-Translator: shun <shun.soccer.shun@gmail.com>\n"
 "Language-Team: ADNShop\n"
 "Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;esc_attr__;__e;_x;_e;esc_html__\n"
@@ -19,10 +19,14 @@ msgstr ""
 "X-Poedit-SearchPath-2: public\n"
 "X-Poedit-SearchPathExcluded-0: public/js/sweetalert2.all.min.js\n"
 
+#: admin/class-checkout-confirm-admin.php:123
+msgid "edit"
+msgstr "ページ編集"
+
 #: admin/class-checkout-confirm-admin.php:133
 #: admin/class-checkout-confirm-admin.php:134
-msgid "有料版のインスール"
-msgstr "有料版のインスール"
+msgid "Install Paid Version"
+msgstr "有料版をダウンロード"
 
 #: admin/class-checkout-confirm-admin.php:281
 msgid "Paid Version"
@@ -75,12 +79,12 @@ msgstr "設定"
 msgid "Additional display"
 msgstr "追加表示"
 
-#: admin/views/configure.php:24 admin/views/pro_version.php:3
+#: admin/views/configure.php:26 admin/views/pro_version.php:3
 #: includes/class-checkout-confirm-activator.php:43
 msgid "Cart Checkout Confirmation"
 msgstr "Cart Checkout Confirmation"
 
-#: admin/views/configure.php:26
+#: admin/views/configure.php:28
 msgid "Cart Checkout Confirmation Pro"
 msgstr "Cart Checkout Confirmation Pro"
 
@@ -92,14 +96,14 @@ msgstr "プロバージョン版購入"
 msgid "・making a redirect confirmation page"
 msgstr "・リダイレクトページの作成"
 
-#: admin/views/tabs/additional-display.php:40
-#: admin/views/tabs/additional-display.php:69
+#: admin/views/tabs/additional-display.php:37
+#: admin/views/tabs/additional-display.php:67
 #: admin/views/tabs/additional-display.php:105
 msgid "Title"
 msgstr "題名"
 
-#: admin/views/tabs/additional-display.php:44
-#: admin/views/tabs/additional-display.php:73
+#: admin/views/tabs/additional-display.php:41
+#: admin/views/tabs/additional-display.php:71
 #: admin/views/tabs/additional-display.php:106
 msgid "Content"
 msgstr "コンテンツ"
@@ -113,7 +117,7 @@ msgid "Do you want to add a textarea field?"
 msgstr "テキストエリアフィールを追加する?"
 
 #: admin/views/tabs/additional-display.php:111 admin/views/tabs/fields.php:69
-#: admin/views/tabs/option.php:95
+#: admin/views/tabs/option.php:103
 msgid "Save"
 msgstr "変更を保存"
 
@@ -131,7 +135,7 @@ msgid "Shipping"
 msgstr "配送"
 
 #: admin/views/tabs/fields.php:27 admin/views/tabs/fields.php:28
-#: admin/views/tabs/option.php:15 public/class-checkout-confirm-public.php:133
+#: admin/views/tabs/option.php:5 public/class-checkout-confirm-public.php:133
 #: public/partials/checkout-confirm-public-display.php:16
 msgid "Order"
 msgstr "注文"
@@ -144,50 +148,50 @@ msgstr "「請求処理」を表示/非表示"
 msgid "Display fields"
 msgstr "表示フィールド"
 
-#: admin/views/tabs/option.php:10
+#: admin/views/tabs/option.php:4
+msgid "Place order"
+msgstr "注文する"
+
+#: admin/views/tabs/option.php:20
 msgid "Display Option"
 msgstr "ディスプレイオプション"
 
-#: admin/views/tabs/option.php:11
+#: admin/views/tabs/option.php:21
 msgid ""
 "Various settings can be changed by downloading the Pro version plugin (paid)."
 msgstr ""
 "各種設定は、Pro版（有料）プラグインをダウンロードすることにより変更が可能とな"
 "ります。"
 
-#: admin/views/tabs/option.php:18
-msgid "Place order"
-msgstr "注文する"
-
-#: admin/views/tabs/option.php:25
+#: admin/views/tabs/option.php:33
 msgid "Type"
 msgstr "表示方法"
 
-#: admin/views/tabs/option.php:29
+#: admin/views/tabs/option.php:37
 msgid "Popup"
 msgstr "ポップアップ"
 
-#: admin/views/tabs/option.php:31
+#: admin/views/tabs/option.php:39
 msgid "Redirect to confirm page"
 msgstr "確認ページへリダイレクト"
 
-#: admin/views/tabs/option.php:36
+#: admin/views/tabs/option.php:44
 msgid "Checkout button"
 msgstr "チェックアウトボタン"
 
-#: admin/views/tabs/option.php:41 admin/views/tabs/option.php:70
+#: admin/views/tabs/option.php:49 admin/views/tabs/option.php:78
 msgid "Change text"
 msgstr "テキストを変更"
 
-#: admin/views/tabs/option.php:49 admin/views/tabs/option.php:78
+#: admin/views/tabs/option.php:57 admin/views/tabs/option.php:86
 msgid "Change text color"
 msgstr "テキスト色を変更"
 
-#: admin/views/tabs/option.php:57 admin/views/tabs/option.php:86
+#: admin/views/tabs/option.php:65 admin/views/tabs/option.php:94
 msgid "Change background color"
 msgstr "背景色を変更"
 
-#: admin/views/tabs/option.php:65
+#: admin/views/tabs/option.php:73
 msgid "Order button"
 msgstr "注文ボタン"
 
@@ -272,6 +276,9 @@ msgstr "配送"
 #: public/partials/checkout-confirm-public-display.php:129
 msgid "Discount"
 msgstr "割引"
+
+#~ msgid "有料版のインスール"
+#~ msgstr "有料版のインスール"
 
 #~ msgid "Confirm"
 #~ msgstr "注文"

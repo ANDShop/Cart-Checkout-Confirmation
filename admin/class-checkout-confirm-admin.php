@@ -120,7 +120,7 @@ class Checkout_Confirm_Admin
     {
         add_menu_page(
             'Cart Checkout Confirmation',
-            'ページ編集',
+            esc_html__('edit', 'cart-checkout-confirmation'),
             'manage_options',
             'cart-checkout-confirmation',
             array(&$this, 'show_plugin_options'),
@@ -130,8 +130,8 @@ class Checkout_Confirm_Admin
         if (get_option('license_checkout_confirm') === 'Free' || !get_option('license_checkout_confirm')) {
             add_submenu_page(
                 'cart-checkout-confirmation',
-                esc_html__('有料版のインスール', 'cart-checkout-confirmation'),
-                esc_html__('有料版のインスール', 'cart-checkout-confirmation'),
+                esc_html__('Install Paid Version', 'cart-checkout-confirmation'),
+                esc_html__('Install Paid Version', 'cart-checkout-confirmation'),
                 'manage_options',
                 'checkout-confirm-configure-fields',
                 array(&$this, 'configure_fields_admin_page')
@@ -278,7 +278,7 @@ class Checkout_Confirm_Admin
     {
         if ($file == 'cart-checkout-confirmation/cart-checkout-confirmation.php') {
             $row_meta = array(
-                'apidocs' => '<a target="_blank" href="' . 'https://wp.and-bro.com/shop/plugin/cart-checkout-confirmation' . '" aria-label="' . esc_html__('Paid Version', 'cart-checkout-confirm') . '">' . esc_html__('Paid version', 'cart-checkout-confirm') . '</a>',
+                'apidocs' => '<a target="_blank" href="' . 'https://wp.and-bro.com/shop/plugin/cart-checkout-confirmation' . '" aria-label="' . esc_html__('Paid Version', 'cart-checkout-confirmation') . '">' . esc_html__('Paid version', 'cart-checkout-confirmation') . '</a>',
             );
             return array_merge($links, $row_meta);
         } else {
