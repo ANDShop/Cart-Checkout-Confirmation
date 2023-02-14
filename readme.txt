@@ -26,8 +26,8 @@ Enabling you to
 
 1. Cart Checkout Confirmation can be installed directly through your WordPress
 Plugins dashboard.
-1. Click "Add New" and Search for "Cart Checkout Confirm"
-1. Install and Activate
+2. Click "Add New" and Search for "Cart Checkout Confirm"
+3. Install and Activate
 
 == Screenshots ==
 
