@@ -4,7 +4,7 @@ Donate link: https://wp.and-bro.com
 Tags: checkout, confirm, confirm popup, checkout confirm
 Requires at least: 5.0.0
 Tested up to: 6.0.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,8 +45,10 @@ That is becasue some contents are only available when the pro version of this pl
 == Changelog ==
 
 = 1.0.1 - 2022-10-12 =
-
  *Dev – Add shipping fee field to cart checkout confirm.
  *FIX – Change the text to Japanese on the confirm screen button when opening with popup.
  *Dev – Create on and off mode for text "billing" displayed at the top of each field on the paid version.
  *Dev – Can change button and background color of order text "confirm" in popup on the paid version.
+
+ = 1.0.2 - 2023-2-16 =
+Updating Translation Files
