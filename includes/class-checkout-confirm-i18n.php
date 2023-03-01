@@ -7,7 +7,7 @@
  * so that it is ready for translation.
  *
  * @link       https://bnksolution.com
- * @since      1.0.1
+ * @since      1.0.2
  *
  * @package    Checkout_Confirm
  * @subpackage Checkout_Confirm/includes
@@ -19,7 +19,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @since      1.0.1
+ * @since      1.0.2
  * @package    Checkout_Confirm
  * @subpackage Checkout_Confirm/includes
  * @author     Bnk Solution <info@bnksolution.com>
@@ -31,7 +31,7 @@ class Checkout_Confirm_i18n
     /**
      * Load the plugin text domain for translation.
      *
-     * @since    1.0.1
+     * @since    1.0.2
      */
     public function load_plugin_textdomain()
     {
@@ -41,7 +41,6 @@ class Checkout_Confirm_i18n
             false,
             dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
         );
-
     }
 
     public function checkout_confirm_heading_text($translated, $text, $domain)
@@ -61,11 +60,11 @@ class Checkout_Confirm_i18n
                 case 'Country / Region':
                     $translated = esc_html__('Country / Region', $domain);
                     break;
-                case 'Street address' :
+                case 'Street address':
                     $translated = esc_html__('Street address', $domain);
                     break;
                 case 'Apartment, suite, unit, etc.':
-                    $translated = esc_html__('Apartment, suite, unit, etc.', $domain);
+                    $translated = esc_html__('Apartment, suite, unit, etc', $domain);
                     break;
                 case 'Suburb':
                     $translated = esc_html__('Suburb', $domain);
@@ -83,6 +82,4 @@ class Checkout_Confirm_i18n
         }
         return $translated;
     }
-
-
 }

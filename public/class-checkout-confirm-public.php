@@ -53,7 +53,6 @@ class Checkout_Confirm_Public
 
         $this->plugin_name = $plugin_name;
         $this->version = $version;
-
     }
 
     /**
@@ -106,7 +105,7 @@ class Checkout_Confirm_Public
         }
 
         wp_enqueue_script($this->plugin_name . '-script', plugin_dir_url(__FILE__) . 'js/checkout-confirm-public.js', array('jquery'), $this->version, true);
-        wp_localize_script($this->plugin_name . '-script', 'c3_params_ajax',[
+        wp_localize_script($this->plugin_name . '-script', 'c3_params_ajax', [
             'home_url' => home_url(),
         ]);
     }
@@ -123,14 +122,14 @@ class Checkout_Confirm_Public
             'background_color_checkout_button' => '#333333'
         );
         $option = get_option('check_confirm_page_option');
-        if(get_option('license_checkout_confirm', '') == 'Free' || !is_plugin_active('cart-checkout-confirmation-pro/cart-checkout-confirmation-pro.php')){
+        if (get_option('license_checkout_confirm', '') == 'Free' || !is_plugin_active('cart-checkout-confirmation-pro/cart-checkout-confirmation-pro.php')) {
             $option = $_option;
         }
 
         $option = array_merge($_option, ($option) ? $option : []);
         $script = '<script>var confirmation_type = "' . $option['type'] . '";</script>';
         $script .= '<script>var checkout_confirm_page = "' . get_permalink(get_page_by_path('cart-checkout-confirmation')) . '";</script>';
-        $confirmButton = $option['confirm_button'] ? esc_html__($option['confirm_button'], 'cart-checkout-confirmation') : esc_html__( 'Order' , 'cart-checkout-confirmation');
+        $confirmButton = $option['confirm_button'] ? esc_html__($option['confirm_button'], 'cart-checkout-confirmation') : esc_html__('Order', 'cart-checkout-confirmation');
         $backButton = $option['back_button'] ? esc_html__($option['confirm_button'], 'cart-checkout-confirmation') : esc_html__('Back', 'cart-checkout-confirmation');
         $script .= '<script>var title_langague = "<strong>' . esc_html__('Confirm order', 'cart-checkout-confirmation') . '</strong>"; var confirm_button = "' . $confirmButton . '"; var back_button = "' . $backButton . '";</script>';
         echo wp_kses($script, ['script' => [], 'strong' => []]);
@@ -138,7 +137,6 @@ class Checkout_Confirm_Public
 
     public function get_checkout_confirm_html()
     {
-
         ob_start();
         require plugin_dir_path(__FILE__) . 'partials' . DIRECTORY_SEPARATOR . 'checkout-confirm-public-display.php';
         $html = ob_get_clean();
@@ -189,5 +187,4 @@ class Checkout_Confirm_Public
         if (isset($data['billing_company'])) WC()->customer->set_shipping_last_name($data['billing_company']);
         if (isset($data['shipping_city'])) WC()->customer->set_shipping_last_name($data['shipping_city']);
     }
-
 }

@@ -4,7 +4,7 @@
  * The admin-specific functionality of the plugin.
  *
  * @link       https://bnksolution.com
- * @since      1.0.1
+ * @since      1.0.2
  *
  * @package    Checkout_Confirm
  * @subpackage Checkout_Confirm/admin
@@ -26,7 +26,7 @@ class Checkout_Confirm_Admin
     /**
      * The ID of this plugin.
      *
-     * @since    1.0.1
+     * @since    1.0.2
      * @access   private
      * @var      string $plugin_name The ID of this plugin.
      */
@@ -35,7 +35,7 @@ class Checkout_Confirm_Admin
     /**
      * The version of this plugin.
      *
-     * @since    1.0.1
+     * @since    1.0.2
      * @access   private
      * @var      string $version The current version of this plugin.
      */
@@ -120,12 +120,20 @@ class Checkout_Confirm_Admin
     {
         add_menu_page(
             'Cart Checkout Confirmation',
-            esc_html__('edit', 'cart-checkout-confirmation'),
+            esc_html__('Cart Checkout Confirmation', 'cart-checkout-confirmation'),
             'manage_options',
             'cart-checkout-confirmation',
             array(&$this, 'show_plugin_options'),
             plugin_dir_url(__FILE__) . '/images/approval.svg',
             56
+        );
+        add_submenu_page(
+            'cart-checkout-confirmation',
+            esc_html__('Edit', 'cart-checkout-confirmation'),
+            esc_html__('Edit', 'cart-checkout-confirmation'),
+            'manage_options',
+            'cart-checkout-confirmation',
+            array(&$this, 'show_plugin_options'),
         );
         if (get_option('license_checkout_confirm') === 'Free' || !get_option('license_checkout_confirm')) {
             add_submenu_page(
