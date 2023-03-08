@@ -57,8 +57,8 @@ class Checkout_Confirm_i18n
                 case 'Company name':
                     $translated = esc_html__('Company name', $domain);
                     break;
-                case 'Country / Region':
-                    $translated = esc_html__('Country / Region', $domain);
+                case 'Country/Region':
+                    $translated = esc_html__('Country/Region', $domain);
                     break;
                 case 'Street address':
                     $translated = esc_html__('Street address', $domain);

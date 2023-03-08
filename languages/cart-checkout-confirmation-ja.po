@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Checkout Confirm\n"
-"POT-Creation-Date: 2023-02-28 22:24+0900\n"
-"PO-Revision-Date: 2023-02-28 22:26+0900\n"
+"POT-Creation-Date: 2023-03-08 18:25+0900\n"
+"PO-Revision-Date: 2023-03-08 18:29+0900\n"
 "Last-Translator: shun <shun.soccer.shun@gmail.com>\n"
 "Language-Team: ADNShop\n"
 "Language: ja_JP\n"
@@ -200,67 +200,67 @@ msgid "Order Button"
 msgstr "注文ボタン"
 
 #: cart-checkout-confirmation.php:96 cart-checkout-confirmation.php:121
-msgid "Your First Name"
-msgstr "性"
-
-#: cart-checkout-confirmation.php:97 cart-checkout-confirmation.php:122
-msgid "Your Last Name"
+msgid "First Name"
 msgstr "名"
 
-#: cart-checkout-confirmation.php:98
-msgid "Your Company"
+#: cart-checkout-confirmation.php:97 cart-checkout-confirmation.php:122
+msgid "Last Name"
+msgstr "姓"
+
+#: cart-checkout-confirmation.php:98 cart-checkout-confirmation.php:123
+msgid "Company Name"
 msgstr "会社名"
 
 #: cart-checkout-confirmation.php:99 cart-checkout-confirmation.php:124
-msgid "Street Addres"
+msgid "Street Address"
 msgstr "番地"
 
 #: cart-checkout-confirmation.php:100 cart-checkout-confirmation.php:128
-msgid "Your Country"
+msgid "Country / Region"
 msgstr "国または地域"
 
 #: cart-checkout-confirmation.php:101 cart-checkout-confirmation.php:125
 msgid "Apartment, Suite, Unit, etc"
-msgstr "アパート名、棟名、部屋番号"
+msgstr "アパート名、棟名、部屋番号など"
 
 #: cart-checkout-confirmation.php:102 cart-checkout-confirmation.php:126
-msgid "Your City"
-msgstr "国または地域"
+msgid "Town / City"
+msgstr "市区町村"
 
 #: cart-checkout-confirmation.php:103 cart-checkout-confirmation.php:127
-msgid "Your Postcode"
+msgid "Postcode / ZIP"
 msgstr "郵便番号"
 
 #: cart-checkout-confirmation.php:104 cart-checkout-confirmation.php:129
-msgid "Your State"
-msgstr "市町区村"
+msgid "Prefecture"
+msgstr "都道府県"
 
 #: cart-checkout-confirmation.php:105
-msgid "Your Email"
+msgid "Email Address"
 msgstr "メールアドレス"
 
 #: cart-checkout-confirmation.php:106
-msgid "Your Phone"
+msgid "Phone"
 msgstr "電話番号"
 
-#: cart-checkout-confirmation.php:123
-msgid "Your Company Name"
-msgstr "会社名"
+#: cart-checkout-confirmation.php:141
+msgid "Order Notes"
+msgstr "注文メモ"
 
 #: includes/class-checkout-confirm-i18n.php:52
 msgid "First name"
-msgstr "性"
+msgstr "名"
 
 #: includes/class-checkout-confirm-i18n.php:55
 msgid "Last name"
-msgstr "名"
+msgstr "姓"
 
 #: includes/class-checkout-confirm-i18n.php:58
 msgid "Company name"
 msgstr "会社名"
 
 #: includes/class-checkout-confirm-i18n.php:61
-msgid "Country / Region"
+msgid "Country/Region"
 msgstr "国/地域"
 
 #: includes/class-checkout-confirm-i18n.php:64
@@ -269,7 +269,7 @@ msgstr "番地"
 
 #: includes/class-checkout-confirm-i18n.php:67
 msgid "Apartment, suite, unit, etc"
-msgstr "アパート名、棟名、部屋番号"
+msgstr "アパート名、棟名、部屋番号など"
 
 #: includes/class-checkout-confirm-i18n.php:70
 msgid "Suburb"
@@ -277,11 +277,11 @@ msgstr "郊外"
 
 #: includes/class-checkout-confirm-i18n.php:73
 msgid "State"
-msgstr "州"
+msgstr "都道府県-"
 
 #: includes/class-checkout-confirm-i18n.php:76
 msgid "Postcode"
-msgstr "郵便番号"
+msgstr "郵便番号-"
 
 #: includes/class-checkout-confirm-i18n.php:79
 msgid "Email address"
@@ -329,6 +329,44 @@ msgstr "配送"
 msgid "Discount"
 msgstr "割引"
 
+#~ msgid "Company"
+#~ msgstr "会社名"
+
+#~ msgid "Country"
+#~ msgstr "国または地域"
+
+#~ msgid "City"
+#~ msgstr "市区町村"
+
+#~ msgid "Your State"
+#~ msgstr "都道府県"
+
+#~ msgid "Your Postcode"
+#~ msgstr "郵便番号"
+
+#, fuzzy
+#~| msgid "Your Postcode"
+#~ msgid "your Postcode"
+#~ msgstr "郵便番号"
+
+#~ msgid "Your First Name"
+#~ msgstr "名"
+
+#~ msgid "Your Last Name"
+#~ msgstr "姓"
+
+#~ msgid "Your Company"
+#~ msgstr "会社名"
+
+#~ msgid "Your Country"
+#~ msgstr "国または地域"
+
+#~ msgid "Your Email"
+#~ msgstr "メールアドレス"
+
+#~ msgid "Your Company Name"
+#~ msgstr "会社名"
+
 #~ msgid "Your state"
 #~ msgstr "市町区村"
 
@@ -347,18 +385,6 @@ msgstr "割引"
 #~ msgid "Your address 2"
 #~ msgstr "メールアドレス2"
 
-#~ msgid "First Name"
-#~ msgstr "性"
-
-#~ msgid "Last Name"
-#~ msgstr "名"
-
-#~ msgid "Company Name"
-#~ msgstr "会社名"
-
-#~ msgid "country"
-#~ msgstr "国または地域"
-
 #~ msgid "Address"
 #~ msgstr "メールアドレス"
 
@@ -373,15 +399,6 @@ msgstr "割引"
 
 #~ msgid "address 2"
 #~ msgstr "メールアドレス2"
-
-#~ msgid "Company"
-#~ msgstr "会社名"
-
-#~ msgid "Town / City"
-#~ msgstr "都道府県"
-
-#~ msgid "Postcode / ZIP"
-#~ msgstr "郵便番号"
 
 #~ msgid "Apartment, Suite, Unit"
 #~ msgstr "住所2（マンション名など）"

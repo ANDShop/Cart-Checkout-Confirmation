@@ -93,17 +93,17 @@ add_filter('woocommerce_billing_fields', 'wpslash_change_billing_fields', 20, 1)
 if (!function_exists('wpslash_change_billing_fields')) {
     function wpslash_change_billing_fields($fields)
     {
-        $fields['billing_first_name']['label'] = esc_html__('Your First Name', 'cart-checkout-confirmation');
-        $fields['billing_last_name']['label'] = esc_html__('Your Last Name', 'cart-checkout-confirmation');
-        $fields['billing_company']['label'] = esc_html__('Your Company', 'cart-checkout-confirmation');
-        $fields['billing_address_1']['label'] = esc_html__('Street Addres', 'cart-checkout-confirmation');
-        $fields['billing_country']['label'] = esc_html__('Your Country', 'cart-checkout-confirmation');
+        $fields['billing_first_name']['label'] = esc_html__('First Name', 'cart-checkout-confirmation');
+        $fields['billing_last_name']['label'] = esc_html__('Last Name', 'cart-checkout-confirmation');
+        $fields['billing_company']['label'] = esc_html__('Company Name', 'cart-checkout-confirmation');
+        $fields['billing_address_1']['label'] = esc_html__('Street Address', 'cart-checkout-confirmation');
+        $fields['billing_country']['label'] = esc_html__('Country / Region', 'cart-checkout-confirmation');
         $fields['billing_address_2']['label'] = esc_html__('Apartment, Suite, Unit, etc', 'cart-checkout-confirmation');
-        $fields['billing_city']['label'] = esc_html__('Your City', 'cart-checkout-confirmation');
-        $fields['billing_postcode']['label'] = esc_html__('Your Postcode', 'cart-checkout-confirmation');
-        $fields['billing_state']['label'] = esc_html__('Your State', 'cart-checkout-confirmation');
-        $fields['billing_email']['label'] = esc_html__('Your Email', 'cart-checkout-confirmation');
-        $fields['billing_phone']['label'] = esc_html__('Your Phone', 'cart-checkout-confirmation');
+        $fields['billing_city']['label'] = esc_html__('Town / City', 'cart-checkout-confirmation');
+        $fields['billing_postcode']['label'] = esc_html__('Postcode / ZIP', 'cart-checkout-confirmation');
+        $fields['billing_state']['label'] = esc_html__('Prefecture', 'cart-checkout-confirmation');
+        $fields['billing_email']['label'] = esc_html__('Email Address', 'cart-checkout-confirmation');
+        $fields['billing_phone']['label'] = esc_html__('Phone', 'cart-checkout-confirmation');
         return $fields;
     }
 }
@@ -118,15 +118,27 @@ if (!function_exists('wpslash_change_shipping_fields')) {
     function wpslash_change_shipping_fields($fields)
     {
 
-        $fields['shipping_first_name']['label'] = esc_html__('Your First Name', 'cart-checkout-confirmation');
-        $fields['shipping_last_name']['label'] = esc_html__('Your Last Name', 'cart-checkout-confirmation');
-        $fields['shipping_company']['label'] = esc_html__('Your Company Name', 'cart-checkout-confirmation');
-        $fields['shipping_address_1']['label'] = esc_html__('Street Addres', 'cart-checkout-confirmation');
+        $fields['shipping_first_name']['label'] = esc_html__('First Name', 'cart-checkout-confirmation');
+        $fields['shipping_last_name']['label'] = esc_html__('Last Name', 'cart-checkout-confirmation');
+        $fields['shipping_company']['label'] = esc_html__('Company Name', 'cart-checkout-confirmation');
+        $fields['shipping_address_1']['label'] = esc_html__('Street Address', 'cart-checkout-confirmation');
         $fields['shipping_address_2']['label'] = esc_html__('Apartment, Suite, Unit, etc', 'cart-checkout-confirmation');
-        $fields['shipping_city']['label'] = esc_html__('Your City', 'cart-checkout-confirmation');
-        $fields['shipping_postcode']['label'] = esc_html__('Your Postcode', 'cart-checkout-confirmation');
-        $fields['shipping_country']['label'] = esc_html__('Your Country', 'cart-checkout-confirmation');
-        $fields['shipping_state']['label'] = esc_html__('Your State', 'cart-checkout-confirmation');
+        $fields['shipping_city']['label'] = esc_html__('Town / City', 'cart-checkout-confirmation');
+        $fields['shipping_postcode']['label'] = esc_html__('Postcode / ZIP', 'cart-checkout-confirmation');
+        $fields['shipping_country']['label'] = esc_html__('Country / Region', 'cart-checkout-confirmation');
+        $fields['shipping_state']['label'] = esc_html__('Prefecture', 'cart-checkout-confirmation');
+        return $fields;
+    }
+}
+
+/**
+ * Change text label order fields and other fields
+ */
+add_filter('woocommerce_checkout_fields', 'c3_change_order_fields', 20, 1);
+if (!function_exists('c3_change_order_fields')) {
+    function c3_change_order_fields($fields)
+    {
+        $fields['order']['order_comments']['label'] = esc_html__('Order Notes', 'cart-checkout-confirmation');
         return $fields;
     }
 }
