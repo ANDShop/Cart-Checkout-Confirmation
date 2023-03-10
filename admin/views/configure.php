@@ -5,7 +5,7 @@ function pp_admin_tabs()
     $tabs = array(
         'fields' => esc_html__('Display Fields', 'cart-checkout-confirmation'),
         'option' => esc_html__('Options', 'cart-checkout-confirmation'),
-        'additional' => esc_html__('Additional display', 'cart-checkout-confirmation')
+        'additional' => esc_html__('Additional Display', 'cart-checkout-confirmation')
     );
     return apply_filters('pp_admin_tabs', $tabs);
 }
@@ -33,10 +33,9 @@ function pp_admin_tabs()
             <?php if (!empty($tabs)) {
                 foreach ($tabs as $key => $value) {
                     $class = ($key == $current) ? ' nav-tab-active' : '';
-                    ?>
-                    <a href="?page=cart-checkout-confirmation&tab=<?php echo esc_attr($key); ?>"
-                       class="nav-tab<?php echo esc_attr($class); ?>"><?php echo esc_attr($value); ?></a>
-                    <?php
+            ?>
+                    <a href="?page=cart-checkout-confirmation&tab=<?php echo esc_attr($key); ?>" class="nav-tab<?php echo esc_attr($class); ?>"><?php echo esc_attr($value); ?></a>
+            <?php
                 }
             }
             ?>
